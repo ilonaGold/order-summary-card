@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
+/* Global styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--pale-blue) url(../images/pattern-background-mobile.svg) top 115px left 0 no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+/* Colors */
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --white: hsl(0,0%,100%);
+}
+
+/* Layout */
+
+.card {
+    margin: 70px 25px;
+    background: var(--white);
+    border-radius: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+main {
+    padding: 30px 25px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+
+.heading {
+    font-size: 22px;
+}
+
+.intro {
+    margin: 20px auto;
+    color: var(--desaturated-blue);
+    opacity: 0.8;
+    line-height: 25px;
+}
+
+.pricing-info, .button {
+    border-radius: 12px;
+}
+
+.pricing-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--very-pale-blue);
+    padding: 20px 10px;
+    margin-bottom: 22px;
+}
+
+.music-icon {
+    width: 45px;
+    height: 45px;
+}
+
+.details h2 {
+    font-size: 15px;
+}
+
+.annual-plan {
+    font-weight: 900;
+    opacity: 0.7;
+}
+
+.price {
+    color: var(--desaturated-blue);
+    font-weight: 500;
+}
+
+.change {
+    margin-left: 45px;
+    font-size: 12px;
+    font-weight: 900;
+    color: var(--bright-blue);
+}
+
+.button {
+    display: inline-block;
+    background: var(--bright-blue);
+    color: white;
+    padding: 15px 62px;
+    text-decoration: none;
+    margin-bottom: 28px;
+    box-shadow: 0 20px 20px rgba(107, 97, 239, 0.25);
+}
+
+.cancel, .order {
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    font-size: 14px;
+    font-weight: 900;
+}
+
+/* Attribution */
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    margin-top: -20px;
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
