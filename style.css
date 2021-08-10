@@ -95,6 +95,12 @@ main {
     color: var(--bright-blue);
 }
 
+.change:hover,
+.change:focus {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
 .button {
     display: inline-block;
     background: var(--bright-blue);
@@ -107,6 +113,11 @@ main {
     box-shadow: 0 20px 20px rgba(107, 97, 239, 0.25);
 }
 
+.button:hover,
+.button:focus {
+    opacity: 0.7;
+}
+
 .cancel, .order {
     text-decoration: none;
     color: var(--desaturated-blue);
@@ -114,15 +125,22 @@ main {
     font-weight: 900;
 }
 
+.cancel:hover,
+.cancel:focus,
+.order:hover,
+.order:focus {
+    color: var(--dark-blue);
+}
+
 /* Media Queries */
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
     body {
         background: var(--pale-blue) url(../images/pattern-background-desktop.svg) no-repeat;
     }
     .card {
         width: 450px;
-        margin: 100px 495px;
+        margin: 100px auto;
     }
     .heading {
         font-size: 26px;
@@ -147,6 +165,13 @@ main {
     }
     .links {
         margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1441px) {
+    body {
+        background-size: 100vw;
+        background-position: top -115px left 0;
     }
 }
 
