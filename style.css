@@ -13,9 +13,6 @@ body {
     font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
     min-height: 100vh;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 /* Colors */
@@ -55,8 +52,8 @@ main {
 .intro {
     margin: 20px auto;
     color: var(--desaturated-blue);
-    opacity: 0.8;
     line-height: 25px;
+    opacity: 0.8;
 }
 
 .pricing-info, .button {
@@ -101,8 +98,10 @@ main {
 .button {
     display: inline-block;
     background: var(--bright-blue);
-    color: white;
-    padding: 15px 62px;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 15px 60px;
     text-decoration: none;
     margin-bottom: 28px;
     box-shadow: 0 20px 20px rgba(107, 97, 239, 0.25);
@@ -113,6 +112,42 @@ main {
     color: var(--desaturated-blue);
     font-size: 14px;
     font-weight: 900;
+}
+
+/* Media Queries */
+
+@media (min-width: 1440px) {
+    body {
+        background: var(--pale-blue) url(../images/pattern-background-desktop.svg) no-repeat;
+    }
+    .card {
+        width: 450px;
+        margin: 100px 495px;
+    }
+    .heading {
+        font-size: 26px;
+    }
+    .intro {
+        width: 300px;
+    }
+    .pricing-info {
+        margin: 25px;
+        padding: 20px 25px;
+        width: 350px;
+    }
+    .details {
+        margin-left: -30px;
+    }
+    .button {
+        width: 350px;
+        font-weight: 900;
+    }
+    .change {
+        margin-left: 45px;
+    }
+    .links {
+        margin-bottom: 20px;
+    }
 }
 
 /* Attribution */
